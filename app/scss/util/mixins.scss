@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 //Mixin for Media query
 @mixin mq($key) {
   $size: map-get($breakpoints, $key);

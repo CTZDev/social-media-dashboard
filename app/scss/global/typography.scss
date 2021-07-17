@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
