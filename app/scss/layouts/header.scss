@@ -1,2 +1,18 @@
 @use "../global" as *;
 @use "../util" as *;
+
+.main-header {
+  padding-top: rem(32);
+  padding-bottom: rem(40);
+
+  &-titles {
+    padding-bottom: rem(24);
+    margin-bottom: rem(16);
+    border-bottom: 1px solid var(--grayish-blue-text);
+
+    > h1 {
+      font-size: rem(24);
+      margin-bottom: rem(6);
+    }
+  }
+}

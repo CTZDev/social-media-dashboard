@@ -1,0 +1,53 @@
+@use "../util" as *;
+
+.tooltip {
+  margin-bottom: rem(16);
+  padding: rem(24);
+  border-radius: rem(6);
+  background-color: var(--grayish-blue-card);
+
+  &-features,
+  &-average {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-features {
+    margin-bottom: rem(24);
+
+    h4 {
+      color: var(--grayish-blue-text);
+    }
+  }
+
+  &-average {
+    > p {
+      font-size: 2.3em;
+      font-weight: bold;
+      color: var(--clr-black);
+    }
+
+    &-record {
+      display: flex;
+      align-items: center;
+
+      > img {
+        margin-right: rem(4);
+      }
+
+      > span {
+        font-weight: bold;
+        font-size: 0.85em;
+      }
+
+      &-up {
+        color: var(--lime-green);
+      }
+
+      &-down {
+        color: var(--bright-red);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "../util" as *;
+
+.toggle {
+  width: rem(48);
+  height: rem(24);
+  border-radius: 100vw;
+  background-color: var(--toggle-light);
+  position: relative;
+
+  &-circle {
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    position: absolute;
+    top: 50%;
+    right: rem(3);
+    transform: translateY(-50%);
+    width: rem(20);
+    height: rem(20);
+
+    &.is-active {
+      left: rem(3);
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@use "../util" as *;
+
+.card {
+  background-color: var(--grayish-blue-card);
+  color: var(--grayish-blue-text);
+  margin-bottom: rem(24);
+  padding: rem(24) 0;
+  text-align: center;
+  border-radius: rem(6);
+  position: relative;
+  background-clip: padding-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 2px;
+    left: 2px;
+    bottom: 0;
+    z-index: -1;
+    margin-top: rem(-4);
+    border-radius: inherit;
+  }
+
+  &-fcb {
+    &::before {
+      background: var(--facebook);
+    }
+  }
+
+  &-twt {
+    &::before {
+      background: var(--twitter);
+    }
+  }
+
+  &-ins {
+    &::before {
+      background: var(--instagram);
+    }
+  }
+
+  &-ytb {
+    &::before {
+      background: var(--youtube);
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    > img {
+      margin-right: rem(6);
+    }
+
+    > small {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+  }
+
+  &-average {
+    > p {
+      font-size: 3.5em;
+      font-weight: bold;
+      color: var(--clr-black);
+      padding-top: rem(16);
+    }
+
+    > span {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: rem(4);
+      font-size: 0.9em;
+      margin-bottom: rem(20);
+    }
+  }
+
+  &-day {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: rem(4);
+    }
+
+    &-up,
+    &-down {
+      font-weight: bold;
+      font-size: 0.85em;
+    }
+
+    &-up {
+      color: var(--lime-green);
+    }
+
+    &-down {
+      color: var(--bright-red);
+    }
+  }
+}

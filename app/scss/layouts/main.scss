@@ -1,0 +1,25 @@
+@use "../util" as *;
+
+.cards {
+  padding-bottom: rem(24);
+}
+
+.tooltips {
+  padding-bottom: rem(32);
+
+  > h2 {
+    font-size: 1.65em;
+    font-weight: bold;
+    color: var(--grayish-blue-text);
+    margin-bottom: rem(26);
+  }
+}
+
+//Atributtion
+.attribution {
+  background-color: var(--grayish-blue-card);
+  font-weight: bold;
+  padding: rem(24);
+  text-align: center;
+  font-size: 1.1em;
+}

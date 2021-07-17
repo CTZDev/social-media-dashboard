@@ -12,185 +12,212 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-header-title">
+    <header class="main-header wrapper">
+      <div class="main-header-titles">
         <h1>Social Media Dashboard</h1>
-        <h2>Total Followers: 23,004</h2>
+        <h2 class="subtitle">Total Followers: 23,004</h2>
       </div>
-      <div class="main-header-theme">
-        <span>Dark Mode</span>
-        <button type="button"></button>
+      <div class="main-header-theme flex flex-jc-sb flex-ai-c">
+        <h2 class="subtitle">Dark Mode</h2>
+        <div class="toggle">
+          <span class="toggle-circle"></span>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="followers">
-        <article class="follower">
-          <div class="follower-content">
-            <div class="follower-header">
+    <main class="wrapper">
+      <section class="cards">
+        <article class="card card-fcb">
+          <div class="card-content">
+            <div class="card-header">
               <img src="./images/icon-facebook.svg" alt="Facebook" />
               <small>@nathanf</small>
             </div>
-            <div class="follower-quantity">
+            <div class="card-average">
               <p>1987</p>
               <span>Followers</span>
             </div>
-            <div class="followers-day">
+            <div class="card-day">
               <img src="./images/icon-up.svg" alt="Up" />
-              <span>12 Today</span>
+              <span class="card-day-up">12 Today</span>
             </div>
           </div>
         </article>
-        <article class="follower">
-          <div class="follower-content">
-            <div class="follower-header">
+        <article class="card card-twt">
+          <div class="card-content">
+            <div class="card-header">
               <img src="./images/icon-twitter.svg" alt="Twitter" />
               <small>@nathanf</small>
             </div>
-            <div class="follower-quantity">
+            <div class="card-average">
               <p>1044</p>
               <span>Followers</span>
             </div>
-            <div class="followers-day">
+            <div class="card-day">
               <img src="./images/icon-up.svg" alt="Up" />
-              <span>99 Today</span>
+              <span class="card-day-up">99 Today</span>
             </div>
           </div>
         </article>
-        <article class="follower">
-          <div class="follower-content">
-            <div class="follower-header">
+        <article class="card card-ins">
+          <div class="card-content">
+            <div class="card-header">
               <img src="./images/icon-instagram.svg" alt="Instagram" />
               <small>@realnathanf</small>
             </div>
-            <div class="follower-quantity">
+            <div class="card-average">
               <p>11k</p>
               <span>Followers</span>
             </div>
-            <div class="followers-day">
+            <div class="card-day">
               <img src="./images/icon-up.svg" alt="Up" />
-              <span>1099 Today</span>
+              <span class="card-day-up">1099 Today</span>
             </div>
           </div>
         </article>
-        <article class="follower">
-          <div class="follower-content">
-            <div class="follower-header">
+        <article class="card card-ytb">
+          <div class="card-content">
+            <div class="card-header">
               <img src="./images/icon-youtube.svg" alt="Youtube" />
               <small>Nathan F.</small>
             </div>
-            <div class="follower-average">
+            <div class="card-average">
               <p>8239</p>
               <span>Subscribers</span>
             </div>
-            <div class="followers-day">
+            <div class="card-day">
               <img src="./images/icon-down.svg" alt="Down" />
-              <span>144 Today</span>
+              <span class="card-day-down">144 Today</span>
             </div>
           </div>
         </article>
       </section>
-      <section class="overview">
+      <section class="tooltips">
         <h2>Overview - Today</h2>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Page Views</h4>
               <img src="./images/icon-facebook.svg" alt="Facebook" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>87</p>
-            <span>3&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-up.svg" alt="Up" />
+              <span class="tooltip-average-record-up">3&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Likes</h4>
               <img src="./images/icon-facebook.svg" alt="Facebook" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>52</p>
-            <span>2&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-down.svg" alt="Down" />
+              <span class="tooltip-average-record-down">2&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Likes</h4>
               <img src="./images/icon-instagram.svg" alt="Instagram" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>5462</p>
-            <span>2257&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-up.svg" alt="Up" />
+              <span class="tooltip-average-record-up">2257&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Profile Views</h4>
               <img src="./images/icon-instagram.svg" alt="Instagram" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>52k</p>
-            <span>1375&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-up.svg" alt="Up" />
+              <span class="tooltip-average-record-up">1375&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Retweets</h4>
               <img src="./images/icon-twitter.svg" alt="Twitter" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>117</p>
-            <span>303&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-up.svg" alt="Up" />
+              <span class="tooltip-average-record-up">303&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Likes</h4>
               <img src="./images/icon-twitter.svg" alt="Twitter" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>507</p>
-            <span>553&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-up.svg" alt="Up" />
+              <span class="tooltip-average-record-up">553&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Likes</h4>
               <img src="./images/icon-youtube.svg" alt="Youtube" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>107</p>
-            <span>19&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-down.svg" alt="Down" />
+              <span class="tooltip-average-record-down">19&percnt;</span>
+            </div>
           </div>
         </article>
-        <article class="overview-today">
-          <div class="overview-content">
-            <div class="overview-features">
+        <article class="tooltip">
+          <div class="tooltip-content">
+            <div class="tooltip-features">
               <h4>Total Views</h4>
               <img src="./images/icon-youtube.svg" alt="Youtube" />
             </div>
           </div>
-          <div class="overview-average">
+          <div class="tooltip-average">
             <p>1407</p>
-            <span>12&percnt;</span>
+            <div class="tooltip-average-record">
+              <img src="./images/icon-down.svg" alt="Down" />
+              <span class="tooltip-average-record-down">12&percnt;</span>
+            </div>
           </div>
         </article>
       </section>
     </main>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/CTZDev/social-media-dashboard" target="_blank" rel="noopener noreferrer">Carlos Terán Zavaleta</a>.
     </div>
   </body>
 </html>
