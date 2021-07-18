@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
   font-size: 0.875rem;
   text-rendering: optimizeSpeed;
+  background-color: var(--background-color);
 
   @include mq(small) {
     font-size: 0.9375rem;
@@ -96,11 +97,21 @@ picture {
 .wrapper {
   padding-left: rem(24);
   padding-right: rem(24);
+
+  @include mq(small) {
+    padding-left: rem(48);
+    padding-right: rem(48);
+  }
+
+  @include mq(medium) {
+    padding-left: rem(64);
+    padding-right: rem(64);
+  }
 }
 
 .subtitle {
   font-size: 1em;
-  color: var(--grayish-blue-text);
+  color: var(--text-color);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

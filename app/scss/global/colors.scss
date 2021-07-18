@@ -1,3 +1,19 @@
+//bg , top bg , card , text
+$colors-light: (
+  clr-white: hsl(0, 0%, 100%),
+  pale-blue: hsl(225, 100%, 98%),
+  grayish-card: hsl(227, 47%, 96%),
+  grayish-text: hsl(228, 12%, 44%),
+);
+
+//bg and blue text (light) , top , card , text
+$colors-dark: (
+  dark-blue: hsl(230, 17%, 14%),
+  dark-pale-blue: hsl(232, 19%, 15%),
+  des-card: hsl(228, 28%, 20%),
+  des-text: hsl(228, 34%, 66%),
+);
+
 :root {
   //Primary
   --lime-green: hsl(163, 72%, 41%);
@@ -7,18 +23,51 @@
   --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --youtube: hsl(348, 97%, 39%);
   --clr-black: hsl(0, 0%, 0%);
-  --clr-white: hsl(0, 0%, 100%);
 
   //Light Theme
-  --toggle-light: hsl(230, 22%, 74%);
-  --pale-blue-bg: hsl(225, 100%, 98%);
-  --grayish-blue-card: hsl(227, 47%, 96%);
-  --grayish-blue-text: hsl(228, 12%, 44%);
+  @each $prop, $value in $colors-light {
+    --#{$prop}: #{$value};
+  }
 
   //Dark Theme
-  --togle-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --dark-blue-bg: hsl(230, 17%, 14%);
-  --dark-blue-card: hsl(232, 19%, 15%);
-  --des-blue-card: hsl(228, 28%, 20%);
-  --des-blue-text: hsl(228, 34%, 66%);
+  @each $prop, $value in $colors-dark {
+    --#{$prop}: #{$value};
+  }
+
+  //Themes Default and Change
+  .dark-theme {
+    --background-color: var(--dark-blue);
+    --top-color: var(--dark-pale-blue);
+    --card-color: var(--des-card);
+    --text-color: var(--des-text);
+    --foreground-color: var(--clr-white);
+    --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  .light-theme {
+    --background-color: var(--clr-white);
+    --top-color: var(--pale-blue);
+    --card-color: var(--grayish-card);
+    --text-color: var(--grayish-text);
+    --foreground-color: var(--clr-black);
+    --toggle: hsl(230, 22%, 74%);
+  }
+
+  //Variables Default
+  --background-color: var(--clr-white);
+  --top-color: var(--pale-blue);
+  --card-color: var(--grayish-card);
+  --text-color: var(--grayish-text);
+  --foreground-color: var(--clr-black);
+  --toggle: hsl(230, 22%, 74%);
+
+  /*Change Dark Theme Operating System*/
+  @media (prefers-color-scheme: dark) {
+    --background-color: var(--dark-blue);
+    --top-color: var(--dark-pale-blue);
+    --card-color: var(--des-card);
+    --text-color: var(--des-text);
+    --foreground-color: var(--clr-white);
+    --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
 }

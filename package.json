@@ -9,10 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "browser-sync": "^2.27.4",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
     "sass": "^1.35.2"
   }
 }

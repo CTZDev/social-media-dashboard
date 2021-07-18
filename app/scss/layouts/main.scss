@@ -1,25 +1,73 @@
 @use "../util" as *;
 
+main {
+  @include maxLength;
+}
+
 .cards {
   padding-bottom: rem(24);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: rem(-46);
+  position: relative;
+  z-index: 1;
+
+  @include mq(small) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: rem(24);
+  }
+
+  @include mq(medium) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: rem(32);
+  }
 }
 
 .tooltips {
   padding-bottom: rem(32);
 
+  display: grid;
+  grid-template-columns: 1fr;
+
+  > h2 {
+    grid-column: 1 / -1;
+  }
+
+  @include mq(small) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: rem(24);
+  }
+
+  @include mq(medium) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: rem(32);
+  }
+
   > h2 {
     font-size: 1.65em;
     font-weight: bold;
-    color: var(--grayish-blue-text);
+    color: var(--text-color);
     margin-bottom: rem(26);
   }
 }
 
 //Atributtion
+
+body {
+  position: relative;
+}
 .attribution {
-  background-color: var(--grayish-blue-card);
+  background-color: var(--card-color);
+  color: var(--foreground-color);
   font-weight: bold;
   padding: rem(24);
   text-align: center;
   font-size: 1.1em;
+
+  @include mq(medium) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }

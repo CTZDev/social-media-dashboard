@@ -1,8 +1,8 @@
 @use "../util" as *;
 
 .card {
-  background-color: var(--grayish-blue-card);
-  color: var(--grayish-blue-text);
+  background-color: var(--card-color);
+  color: var(--text-color);
   margin-bottom: rem(24);
   padding: rem(24) 0;
   text-align: center;
@@ -71,7 +71,7 @@
     > p {
       font-size: 3.5em;
       font-weight: bold;
-      color: var(--clr-black);
+      color: var(--foreground-color);
       padding-top: rem(16);
     }
 

@@ -31,19 +31,19 @@ The designs were created to the following widths:
 
 #### Dark Theme
 
-- Very Dark Blue (BG): hsl(230, 17%, 14%)
-- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-- Desaturated Blue (Text): hsl(228, 34%, 66%)
-- White (Text): hsl(0, 0%, 100%)
+- Very Dark Blue (BG): hsl(230, 17%, 14%) //1
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%) //2
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%) //3
+- Desaturated Blue (Text): hsl(228, 34%, 66%) //4
+- White (Text): hsl(0, 0%, 100%)//5
 
 #### Light Theme
 
-- White (BG): hsl(0, 0%, 100%)
-- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
-- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
-- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
-- Very Dark Blue (Text): hsl(230, 17%, 14%)
+- White (BG): hsl(0, 0%, 100%) //1
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%) //2
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)//3
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)//4
+- Very Dark Blue (Text): hsl(230, 17%, 14%)//5
 
 ## Typography
 

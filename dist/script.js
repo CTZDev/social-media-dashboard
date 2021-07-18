@@ -1,0 +1,2 @@
+"use strict";var _dark_mode=_interopRequireDefault(require("./modules/dark_mode.js"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}document.addEventListener("DOMContentLoaded",(function(e){(0,_dark_mode.default)()}));
+//# sourceMappingURL=script.js.map

@@ -1,24 +1,29 @@
 @use "../util" as *;
 
 .toggle {
-  width: rem(48);
-  height: rem(24);
+  width: rem(56);
+  height: rem(28);
   border-radius: 100vw;
-  background-color: var(--toggle-light);
-  position: relative;
+  background: var(--toggle);
+  padding: rem(4);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(black, 0);
 
   &-circle {
-    border-radius: 50%;
-    background-color: var(--clr-white);
-    position: absolute;
-    top: 50%;
-    right: rem(3);
-    transform: translateY(-50%);
+    content: "";
+    display: block;
     width: rem(20);
     height: rem(20);
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transform: translateX(rem(28));
+    will-change: transform;
+    pointer-events: none;
+    transition: transform 250ms ease;
 
     &.is-active {
-      left: rem(3);
+      transform: translateX(0);
     }
   }
 }

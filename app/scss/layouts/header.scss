@@ -3,16 +3,41 @@
 
 .main-header {
   padding-top: rem(32);
-  padding-bottom: rem(40);
+  padding-bottom: rem(90);
+  background-color: var(--top-color);
+  color: var(--foreground-color);
+  border-bottom-left-radius: rem(24);
+  border-bottom-right-radius: rem(24);
+  @include maxLength;
+
+  @include mq(small) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &-titles {
     padding-bottom: rem(24);
     margin-bottom: rem(16);
-    border-bottom: 1px solid var(--grayish-blue-text);
+    border-bottom: 1px solid var(--text-color);
+
+    @include mq(small) {
+      padding-bottom: initial;
+      margin-bottom: initial;
+      border-bottom: initial;
+    }
 
     > h1 {
       font-size: rem(24);
       margin-bottom: rem(6);
+    }
+  }
+
+  &-theme {
+    @include mq(small) {
+      > h2 {
+        margin-right: rem(12);
+      }
     }
   }
 }
